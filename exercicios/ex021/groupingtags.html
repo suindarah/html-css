@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(124, 124, 124);
+            margin: 0px;
+        }
+        header{
+            background-color: rgb(247, 221, 221);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(34, 27, 27);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.849); /* inset(opcional) - Horizontal - Vertical - Blur - Espalhamento - Cor*/
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;  
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 0px 40px; /*Cima - Direita - Baixo - Esquerda ou par cimabaixo - par esquerdadireita*/
+            box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.719);
+        }
+        article{
+            background-color: rgb(207, 207, 207);
+            padding: 5px;
+            
+            
+        }
+        article > aside{
+            background-color: rgb(189, 171, 171);
+        }
+        footer{
+            background-color: rgb(2, 2, 2);
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--CABEÇALHO-->
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header> 
+
+    <main> <!--CONTEÚDO PRINCIPAL-->
+        <section id="assuntos"> <!--Seção de conteúdo-->
+
+        </section>
+        <section id="noticias">
+            <article> <!--Artigo-->
+                <h2>CPI da COVID</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque consequatur, commodi fuga explicabo molestias repellat dignissimos, sit quas molestiae illo tempora quia iure dolorum beatae? Culpa tempora saepe eaque laborum.</p>
+                <aside>
+                    <p>Artigo escrito por Guilherme da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer> <!--RODAPÉ-->
+        <p>desenvolvido por Curso em Vídeo</p>
+    </footer>
+</body>
+</html>

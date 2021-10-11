@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        h1{
+            height: 300px;
+            width: 300px;
+
+            background-color: rgb(224, 30, 30);
+            
+            border-width: 10px;
+            border-style: solid; /*Pode ser dashed - tracejado / dotted - pontilhado / double - linha dupla / groove - 3d*/
+            border-color: black;
+            /*
+                Substitua estas três linhas por um só -> border: 10px solid black;
+                border: tamanho estilo cor;
+            */
+
+
+            padding-top: 40px;
+            padding-right: 10px;
+            padding-bottom: 40px;
+            padding-left: 10px;
+            /*
+                Substitua estas quatro linhas por um só -> padding: 40px 10px 40px 10px;
+                padding: cima direita baixo esquerda;
+                NOTA: se todos os valores forem iguais, basta mostrar apenas um -> margin: 10px;             
+                Você também pode colocar em pares, sendo um par cima baixo e outro par esquerda direita -> padding: 40px(cima baixo) 10px(esquerda direita);
+            */
+
+            margin: auto; /*Para centralizar uma caixa basta colocar as margins como auto*/
+            
+            /*Tracejado dentro da margem*/
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: saddlebrown; 
+            /*Mesmo esquema das anteriores outline: tamanho estilo cor;*/
+        }
+        a{
+            display: block; 
+            /*Transforma a tag "a" em um bloco, mas também pode tranforma-la em inline*/
+            border-width: 10px;
+            border-style: doted;
+            border-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        TODA CAIXA TEM:
+        border
+        padding
+        margin
+        outline
+
+        CAIXAS DO TIPO BOX-LEVEL:
+        Caixas que ocupam toda a largura disponivel e SEMPRE pulam linha do conteúdo, e no seu final, a linha quebra novamente
+
+        EXEMPLOS DE BOX-LEVEL:
+        <div>
+        <h1>
+        <p>
+        <main>
+        <header>
+        <nav>
+        <article>
+        <aside>
+        <footer>
+        <form>
+        <video>
+
+        CAIXAS DO TIPO INLINE-LEVEL:
+        Caixas que ocupam um pequeno lugar na linha e não quebram ela nem no inicio nem no fim
+
+        EXEMPLOS DE INLINE-LEVEL
+        <span>
+        <a>
+        <code>
+        <small>
+        <strong>
+        <em>
+        <sup>
+        <sub>
+        <label>
+        <button>
+        <input>
+        <select>
+    -->
+    <h1>Exemplo de box-level</h1>
+    <p>Paragráfos também são exemplos de box level, mas os <a href="#">Links são exemplos de caixas inline-level</a> vamos ver como tudo isso funciona</p>
+</body>
+</html>
